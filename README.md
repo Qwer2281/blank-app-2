@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 st.title("📈 주식 거래 시뮬레이터")
 
 # --- 주가 데이터 가져오기 ---
-ticker = st.sidebar.text_input("종목코드 (예: AAPL, TSLA, MSFT)", "AAPL")
+ticker = st.sidebar.text_input("005930, "AAPL")
 data = yf.download(ticker, period="6mo")
 
 # --- 계좌 초기화 ---
